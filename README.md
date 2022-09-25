@@ -16,14 +16,16 @@ Ports for Host machine
   - pgadmin IP - 5050
 
 To use this script you need :
-Docker Engine
-Docker Compose
-*Docker Desktop installation usually takes care of both
+  - Docker Engine
+  - Docker Compose
+Docker Desktop installation usually takes care of both
 
-## To start run
+## To start run in the project folder
 docker-compose up
 
-## For linux systems, the first run will fail. Please change the file permission for the data folder created
+## For linux systems 
+The first run will fail. 
+Please change the file permission for the data folder created.
 sudo chown -R 5050:5050 data
 
 More details here. pgAdmin needs the data folder to have UID and GID as 5050:5050
